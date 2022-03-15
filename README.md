@@ -1,9 +1,9 @@
 ## Steamicons API
 
 Currently, Valve's official Steam Web API does not offer an easy way to retreive app icons for steam games (the little logo that can optionally be displayed in your library) by appid, as the links to the images include a SHA-1 hash of the JPEG (This [SO Post](https://stackoverflow.com/questions/53963328/how-do-i-get-a-hash-for-a-picture-form-a-steam-game) mentions the problem).
-However, when checking the owned games of a public steam accounts, these hashes are exposed by valve. 
+However, when checking the owned games of any public steam account, these hashes are exposed by valve. 
 
-This API caches these hashes, and offers them via a seperate REST endpoint, where they can be requested by appid (The API occasionally queries all logo hashes of games that are either owned by the top game owners listed on https://steamladder.com/ or have been reviewed by at least one public account). 
+This API caches these hashes and offers them via a separate REST endpoint, where they can be requested by appid (The API occasionally queries all logo hashes of games that are either owned by the top game owners listed on https://steamladder.com/ or have been reviewed by at least one public account). 
 
 I am hosting a version of this API at `https://steamicons.adriansteffan.com/<app_id>`. If you want to host this yourself, you will need to use your own steam api key in order to collect a list of hashes with the provided scripts.
 
@@ -30,7 +30,7 @@ docker-compose build
 
 in the root directory. As this will build the list of hashes while respecting Valve's rate limits, this might take a few hours.
 
-After completing the setup, start the contianer with
+After completing the setup, start the container with
 
 ```
 docker-compose up -d
