@@ -1,0 +1,11 @@
+"""
+Create a Steam-Web-API-Key here
+http://steamcommunity.com/dev/apikey
+"""
+STEAM_KEY = ""
+
+"""
+Get your Steam-Ladder-Key here
+https://steamladder.com/user/settings/api/
+"""
+STEAM_LADDER_KEY = ""
