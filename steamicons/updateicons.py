@@ -10,10 +10,6 @@ if __name__ != "__main__":
 GAME_ICONS_JSON_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../data/game_icons.json')
 IDS_WITH_MISSING_DATA_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../data/missing_data_ids.txt')
 
-#x = requests.get("http://store.steampowered.com/api/appdetails?appids=57690")
-#print(x.json()['57690']['data']['header_image'])
-#print(x.json()['57690']['data']["recommendations"])
-
 
 def update_game_icons(check_new_games, recheck_unreviewed_games):
     try:
